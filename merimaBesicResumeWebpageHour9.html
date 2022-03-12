@@ -1,0 +1,213 @@
+<!--I fixed margin and padding issues on mobile. I improved design by centering the photo and title on left side. 
+  Also I styled the navigation list-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Merima Besic Resume</title>
+  <style>
+    :root {
+      --theme-color: rosybrown;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      font-family: monospace, Georgia;
+      margin: 20px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    .left {
+      width: 40%;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .right {
+      margin: 10px;
+      padding: 20px;
+      background-color: var(--theme-color);
+      width: 60%;
+      border-radius: 20px;
+    }
+
+    .card {
+      border-width: 1px;
+      border-style: solid;
+      border-color: black;
+      padding: 8px;
+      margin: 5px;
+      background-color: #e6e6e6;
+      border-radius: 8px;
+      box-shadow: 0 6px 10px 0;
+    }
+
+    .card-right {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #808080;
+      padding: 8px;
+      margin: 5px;
+      background-color: rgb(204, 166, 166);
+      border-radius: 8px;
+    }
+
+    .photo {
+      width: 150px;
+      height: 180px;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 12px;
+      border-color: var(--theme-color);
+      box-shadow: 0 6px 10px 0 #695f46;
+    }
+
+    .icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    button {
+      background-color: var(--theme-color);
+      padding: 7px;
+      box-shadow: 0 6px 10px 0 #695f46;
+      border-radius: 10%;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: grey;
+    }
+
+    .personal-title {
+      font-family: Georgia;
+      color: grey;
+      font-style: italic;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+    }
+
+    .introduction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      background-color: var(--theme-color);
+      padding: 3px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <ul class="navigation">
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work-experience">Work Experience</a></li>
+      <li><a href="#voluenteer-experience">Volunteer Experience</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#interests">Personal interests</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="left">
+      <div class="introduction">
+        <img class="photo"
+          src="https://scontent.fsjj2-1.fna.fbcdn.net/v/t1.15752-9/274218715_1032569984325329_284987029720187608_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=zPzc7U5mHfcAX8Iclm7&_nc_ht=scontent.fsjj2-1.fna&oh=03_AVJXx8GqwNCiv6HK6oD3cRaqiVhDBnaqQ-pnle9NTY8I2w&oe=6240707C"
+          alt="My resume photo">
+        <h1>MERIMA BESIC</h1>
+        <h2 class="personal-title">Medical student</h2>
+      </div>
+      <div class="card">
+        <h2>CONTACT</h2>
+        <p><strong>E-mail: </strong>besic.merimma@gmail.com</p>
+        <p><strong>Phone: </strong>+387 60 34 18 143</p>
+        <p><strong>Address: </strong>Aleja Alije Izetbegovica, 33 Tuzla</p>
+      </div>
+      <div class="card">
+        <h2>SKILLS</h2>
+        <button>Creative</button>
+        <button>Organization</button>
+        <button>Motivation</button>
+        <button>Flexibility</button>
+        <button>Determined</button>
+        <button>Optimistic mindset</button>
+      </div>
+      <div class="card">
+        <h2>LINKS</h2>
+        <a href="https://www.facebook.com/profile.php?id=100069677733774" target="_blank">
+          <img class="icon"
+            src="https://freepngimg.com/thumb/social_media/74021-network-icons-media-fb-computer-facebook-social.png"
+            alt="Facebook icon"></a>
+        <a href="https://www.linkedin.com/in/merima-be%C5%A1i%C4%87-534338233" target="_blank">
+          <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon"></a>
+        <a href="mailto:besic.merimma@gmail.com" target="_blank"><img class="icon"
+            src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="GMail icon"></a>
+      </div>
+    </div>
+    <div class="right">
+      <div id="education" class="card-right">
+        <h2>EDUCATION</h2>
+
+        <p>Gimnazija Srebrenik <strong>(2011-2015)</strong></p>
+        <p>Medicinski fakultet u Tuzli <strong>(2015-present)</strong></p>
+        <p>BILD-IT preliminarni bootcamp <strong>(2022-present)</strong></p>
+      </div>
+      <div id="work-experience" class="card-right">
+        <h2>WORK EXPERIENCE</h2>
+        <p>Private chemistry and physics instructions for students <strong>(2020-present)</strong></p>
+        <p>Piano instructions for begginers <strong>(2020-present)</strong></p>
+      </div>
+      <div id="voluenteer-experience" class="card-right">
+        <h2>VOLUNTEER EXPERIENCE</h2>
+
+        <p><strong>Volunteer in the Student Organization</strong></p>
+        <p><em>"SV Medicus" </em>Medicinski fakultet u Tuzli</p>
+
+        <ul>
+          <li>Congresses</li>
+          <li>Symposium</li>
+          <li>Faculty activities</li>
+        </ul>
+      </div>
+      <div id="languages" class="card-right">
+        <h2>LANGUAGES</h2>
+
+        <ul>
+          <li>English</li>
+          <li>German</li>
+        </ul>
+      </div>
+      <div id="interests" class="card-right">
+        <h2>PERSONAL INTERESTS</h2>
+
+        <ul>
+          <li>Playing piano</li>
+          <li>Reading books</li>
+          <li>Playing tennis</li>
+          <li>Learning new skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
